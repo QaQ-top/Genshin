@@ -2,7 +2,7 @@ import { join } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-const outDir = join(__dirname, 'dist/render')
+const outDir = join(__dirname, 'dist')
 const renderDir = join(__dirname, 'src/render')
 const publicDir = join(__dirname, 'public')
 

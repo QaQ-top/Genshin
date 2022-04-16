@@ -7,7 +7,11 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "outDir": "dist/main"
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "@s/*": ["./src/server/*"]
+    },
   },
   "include": [
     "src/main/app.ts",

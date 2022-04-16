@@ -1,7 +1,7 @@
 
 import { app, Menu, MenuItemConstructorOptions, shell } from 'electron';
 
-const appName = 'vite-electron'
+const appName = '原神工具箱';
 const template: MenuItemConstructorOptions[] = [
   {
     label: '编辑',

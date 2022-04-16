@@ -2,8 +2,6 @@ import Koa from 'koa';
 import { router } from './http/routes'
 import bodyParser from 'koa-bodyparser'
 
-import { UID } from '../config';
-
 const server = new Koa();
 
 server.use(bodyParser());
@@ -23,4 +21,4 @@ server.use(async (ctx, next) => {
 
 server.use(router.routes());
 
-export default server
+export default server;

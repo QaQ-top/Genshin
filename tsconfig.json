@@ -9,8 +9,13 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/render/*","./src/render/*.vue"],
+      "@s/*": ["./src/server/*"]
+    }
   },
-  "include": ["/global.d.ts", "src/render/**/*.ts", "src/render/**/*.d.ts", "src/render/**/*.tsx", "src/render/**/*.vue"],
+  "include": ["/global.d.ts", "src/render/**/*.ts", "src/render/**/*.d.ts", "src/render/**/*.tsx", "src/render/**/*.vue", "src/server/**/*.ts"],
   "exclude": ["src/app.ts"]
 }
